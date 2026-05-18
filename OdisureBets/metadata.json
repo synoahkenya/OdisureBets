@@ -1,0 +1,6 @@
+{
+  "name": "ODISURE BETS",
+  "description": "Premium football prediction platform with sure odds and smart wins. Experience top-tier sports analytics and VIP insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

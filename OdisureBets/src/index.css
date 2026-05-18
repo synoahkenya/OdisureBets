@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00A651;
+  --color-primary-dark: #008c44;
+  --color-accent-yellow: #FFC72C;
+  --color-accent-red: #E30613;
+  --color-dark-bg: #0F172A;
+  --color-dark-card: #1E293B;
+  --color-light-text: #F8FAFC;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-light-text font-sans selection:bg-primary/30 selection:text-primary;
+  }
+}
+
+.vip-blur {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.neon-border {
+  box-shadow: 0 0 10px rgba(0, 166, 81, 0.3);
+}
+
+.vip-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 199, 44, 0) 0%,
+    rgba(255, 199, 44, 0.2) 50%,
+    rgba(255, 199, 44, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
